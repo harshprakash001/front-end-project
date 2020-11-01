@@ -1,0 +1,260 @@
+/* CSS Reset */
+
+*{
+    margin:0px;
+    padding:0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:59px
+}
+
+
+/* Navigation Bar */
+
+#navbar{
+    display:flex;
+    align-items: center;
+    position:sticky;
+    top:0px;
+    z-index: +1;
+    
+}
+
+
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity:.6;
+}
+
+/* Navigation Bar:Logo and Image */
+#logo{
+
+    margin: 10px 34px;
+
+}
+
+#logo img{
+    height:64px; 
+    margin: 3px 5px;
+
+
+} 
+
+
+/* Navigation Bar:List Styling */
+
+#navbar ul{
+    display:flex;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size:1.3rem;
+}
+
+#navbar ul li a{
+    color:white;
+    display:block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration:none;
+
+
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+
+}
+
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction:column ;
+    padding:3px 200px;
+    height: 303px;
+    justify-content:center;
+    align-items: center;
+    
+}
+#home::before{
+    content: "";
+    background: url("../img/zz.jpg")no-repeat center center/cover ;
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height: 420px;
+    z-index: -1;
+    opacity: .8;
+}
+#home h1{
+
+    color:white;
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+   
+
+}
+
+#home p{
+
+    color:white;
+    text-align:center;
+    font-size:1.2rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* Services Section */
+
+#services{
+    margin:4px;
+    display:flex;
+}
+#services .box{
+    border:2px solid brown;
+    padding:27px;
+    margin: 3px 38px;
+    border-radius: 23px;
+    background-color: #e4d6da;
+    margin-bottom: 23px;
+    
+}
+
+#services .box img{
+   
+    height:200px;
+    margin: auto;
+    display: block;
+    
+}
+#services .box p{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Clint-section */
+
+#client-section{
+    position:relative;
+    height:auto;
+}
+
+#client-section::before{
+    content:"";
+    position:absolute;
+    background:url("../img/e.jpg")no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    opacity: .2;
+}
+
+
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+#clients img{
+    height: 109px;
+    padding:14px;
+}
+
+/* Contact Section */
+
+#contact{
+    position:relative;
+}
+
+#contact::before{
+    content: "";
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:.7;
+    background:url("../img/c1.jpg")no-repeat center center/cover;
+   
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding:.5rem;
+    border-radius: 9px;
+    font-size:1.1rem;
+
+}
+
+#contact-box form{
+    width:40%; 
+}
+ #contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Baloo Tammudu 2', cursive;
+ }  
+
+footer{
+    background:black;
+    color:white;
+    padding:9px 20px;
+
+}
+
+.sub{
+    padding:2px 83px;
+}
+
+
+/* Utility Classes */
+.h-primary{
+    font-size:2.8rem;
+    padding:22px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.h-secondary{
+    font-family: 'Roboto', sans-serif;
+    font-size:1.8rem;
+    padding:12px;
+}
+.btn{
+    padding:6px 20px;
+    border:2px solid white;
+    background-color: tomato;
+    color:white;
+    margin:17px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+
+
